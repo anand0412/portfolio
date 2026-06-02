@@ -36,7 +36,7 @@ border-bottom:1px solid rgba(255,255,255,.05);
 }
 
 .logo{
-font-size:56px;
+font: size 48px;
 font-weight:800;
 color:#d4af37;
 text-decoration:none;
@@ -96,21 +96,21 @@ gap:80px;
 
 background:
 radial-gradient(
-circle at top right,
-rgba(212,175,55,.18),
+circle at 75% 35%,
+rgba(212,175,55,.12),
 transparent 35%
 ),
 
 radial-gradient(
-circle at bottom left,
-rgba(212,175,55,.08),
-transparent 45%
+circle at 25% 75%,
+rgba(212,175,55,.05),
+transparent 40%
 ),
 
 linear-gradient(
 180deg,
-#090909,
-#050505
+#090909 0%,
+#050505 100%
 );
 }
 
@@ -225,26 +225,20 @@ justify-content:center;
 .hero-image img{
 width:420px;
 max-width:100%;
-
 border-radius:24px;
 
 position:relative;
 z-index:2;
 
 box-shadow:
-0 0 60px rgba(212,175,55,.15),
-0 0 120px rgba(212,175,55,.08);
+0 0 40px rgba(212,175,55,.12),
+0 30px 80px rgba(0,0,0,.45);
 
-transition:.4s;
+transition:.4s ease;
 }
 
 .hero-image img:hover{
-transform:translateY(-8px);
-}
-width:420px;
-max-width:100%;
-border-radius:20px;
-box-shadow:0 0 50px rgba(212,175,55,.2);
+transform:translateY(-6px);
 }
 
 /* ==========================

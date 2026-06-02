@@ -713,4 +713,116 @@ font-size:28px;
 grid-template-columns:1fr;
 }
 
+}/* ==========================
+CONTACT SECTION
+========================== */
+
+.contact{
+padding:120px 8%;
+}
+
+.contact-intro{
+max-width:850px;
+margin:0 auto 60px;
+text-align:center;
+}
+
+.contact-intro p{
+font-size:20px;
+line-height:1.8;
+color:#cfcfcf;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-bottom:80px;
+}
+
+.contact-card{
+background:#111;
+padding:40px;
+border-radius:20px;
+border:1px solid #222;
+text-align:center;
+transition:.3s;
+}
+
+.contact-card:hover{
+transform:translateY(-8px);
+border-color:#d4af37;
+}
+
+.contact-icon{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.contact-card h3{
+color:#d4af37;
+margin-bottom:15px;
+font-size:24px;
+}
+
+.contact-card p,
+.contact-card a{
+color:#cfcfcf;
+text-decoration:none;
+line-height:1.8;
+}
+
+.hire-cta{
+text-align:center;
+padding:60px 30px;
+background:#111;
+border-radius:25px;
+border:1px solid #222;
+}
+
+.hire-cta h3{
+font-size:40px;
+margin-bottom:30px;
+}
+
+.hire-btn{
+display:inline-block;
+padding:18px 40px;
+background:#d4af37;
+color:#000;
+font-weight:700;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.hire-btn:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(212,175,55,.25);
+}/* ==========================
+FOOTER
+========================== */
+
+footer{
+padding:60px 30px;
+text-align:center;
+border-top:1px solid #222;
+}
+
+.footer-name{
+font-size:32px;
+font-weight:700;
+color:#fff;
+margin-bottom:10px;
+}
+
+.footer-title{
+color:#d4af37;
+margin-bottom:20px;
+letter-spacing:2px;
+}
+
+.footer-copy{
+color:#777;
+font-size:14px;
 }

@@ -377,20 +377,18 @@ IMAGE OVERLAY
 .overlay{
     position:absolute;
     inset:0;
+
     background:linear-gradient(
-    to top,
-    rgba(0,0,0,.95),
-    rgba(0,0,0,.2)
+        to top,
+        rgba(0,0,0,.75) 0%,
+        rgba(0,0,0,.15) 35%,
+        rgba(0,0,0,0) 60%
     );
 
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-
-    padding:25px;
-
     opacity:0;
-    transition:.3s;
+    transition:.3s ease;
+
+    padding:20px;
 }
 
 .card:hover .overlay{
@@ -398,17 +396,35 @@ IMAGE OVERLAY
 }
 
 .overlay h3{
-    color:white;
-    font-size:22px;
-    margin-bottom:10px;
+    position:absolute;
+    left:20px;
+    bottom:18px;
+
+    margin:0;
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
 }
 
 .overlay p{
+    position:absolute;
+    right:20px;
+    bottom:34px;
+
+    margin:0;
     color:#d4af37;
-    margin-bottom:8px;
+    font-size:14px;
+    font-weight:600;
+    text-align:right;
 }
 
 .overlay span{
-    color:#bbb;
-    font-size:14px;
+    position:absolute;
+    right:20px;
+    bottom:16px;
+
+    margin:0;
+    color:#bdbdbd;
+    font-size:12px;
+    text-align:right;
 }

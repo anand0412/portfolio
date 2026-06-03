@@ -940,8 +940,12 @@ font-size:48px;
 grid-template-columns:1fr;
 }
 
-}.project-card-link{
+.project-card-link{
 display:block;
 text-decoration:none;
 color:inherit;
+}
+
+.project-card{
+cursor:pointer;
 }

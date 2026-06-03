@@ -1231,3 +1231,75 @@ grid-template-columns:1fr;
 }
 
 }
+
+/* ==========================
+SELECTED CLIENTS
+========================== */
+
+.clients{
+padding:120px 8%;
+}
+
+.clients-intro{
+max-width:850px;
+margin:0 auto 60px;
+text-align:center;
+}
+
+.clients-intro p{
+font-size:20px;
+line-height:1.8;
+color:#cfcfcf;
+}
+
+.clients-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.client-card{
+background:#111;
+border:1px solid #222;
+border-radius:20px;
+padding:35px 25px;
+text-align:center;
+transition:.35s ease;
+}
+
+.client-card:hover{
+transform:translateY(-8px);
+border-color:#d4af37;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.35),
+0 0 25px rgba(212,175,55,.12);
+}
+
+.client-card h3{
+font-size:22px;
+margin-bottom:12px;
+color:#ffffff;
+}
+
+.client-card span{
+color:#d4af37;
+font-size:14px;
+font-weight:600;
+}
+
+@media(max-width:900px){
+
+.clients-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.clients-grid{
+grid-template-columns:1fr;
+}
+
+}

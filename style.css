@@ -980,3 +980,77 @@ cursor:pointer;
 }
 
 }
+
+/* ==========================
+BROWSE BY DESIGN TYPE
+========================== */
+
+.design-types{
+padding:120px 8%;
+}
+
+.type-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.type-card{
+background:#111;
+border:1px solid #222;
+
+border-radius:24px;
+
+padding:40px 25px;
+
+text-align:center;
+
+text-decoration:none;
+color:white;
+
+transition:.35s ease;
+}
+
+.type-card:hover{
+transform:translateY(-10px);
+
+border-color:#d4af37;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.35),
+0 0 30px rgba(212,175,55,.15);
+}
+
+.type-icon{
+font-size:48px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.type-card h3{
+font-size:26px;
+margin-bottom:10px;
+}
+
+.type-card p{
+color:#cfcfcf;
+font-size:16px;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.type-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.type-grid{
+grid-template-columns:1fr;
+}
+
+}

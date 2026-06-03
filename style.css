@@ -1103,3 +1103,62 @@ grid-template-columns:1fr;
 }
 
 }
+/* ==========================
+PROJECT COVER
+========================== */
+
+.project-cover{
+position:relative;
+height:80vh;
+overflow:hidden;
+}
+
+.project-cover img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.cover-overlay{
+position:absolute;
+inset:0;
+
+background:linear-gradient(
+to top,
+rgba(0,0,0,.85),
+rgba(0,0,0,.35)
+);
+
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+
+padding:80px 8%;
+}
+
+.cover-overlay h1{
+font-size:72px;
+margin-bottom:15px;
+}
+
+.cover-overlay p{
+font-size:24px;
+color:#d4af37;
+}
+
+@media(max-width:900px){
+
+.project-cover{
+height:60vh;
+}
+
+.cover-overlay h1{
+font-size:42px;
+}
+
+.cover-overlay p{
+font-size:18px;
+}
+
+}

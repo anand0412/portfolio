@@ -874,4 +874,82 @@ letter-spacing:2px;
 .footer-copy{
 color:#777;
 font-size:14px;
+}/* ==========================
+PROJECT PAGE
+========================== */
+
+.project-hero{
+padding:180px 8% 80px;
+max-width:1200px;
+margin:auto;
+}
+
+.project-hero h1{
+font-size:72px;
+margin-bottom:40px;
+}
+
+.project-details{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-bottom:40px;
+}
+
+.project-details div{
+background:#111;
+padding:25px;
+border-radius:18px;
+border:1px solid #222;
+}
+
+.project-details strong{
+display:block;
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.project-description{
+font-size:20px;
+line-height:1.8;
+color:#cfcfcf;
+max-width:900px;
+}
+
+.project-gallery{
+padding:0 8% 100px;
+}
+
+.project-gallery img{
+width:100%;
+display:block;
+margin-bottom:40px;
+border-radius:20px;
+}
+
+.back-section{
+padding:0 8% 120px;
+text-align:center;
+}
+
+.back-btn{
+display:inline-block;
+padding:16px 35px;
+background:#d4af37;
+color:#000;
+text-decoration:none;
+font-weight:700;
+border-radius:50px;
+}
+
+@media(max-width:900px){
+
+.project-hero h1{
+font-size:48px;
+}
+
+.project-details{
+grid-template-columns:1fr;
+}
+
 }

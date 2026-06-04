@@ -1892,21 +1892,13 @@ RESUME BUTTON
 ========================== */
 
 .btn-resume{
-
 padding:16px 34px;
-
-background:#111;
-
-border:1px solid #333;
-
+background:transparent;
+border:1px solid #d4af37;
 color:#fff;
-
 text-decoration:none;
-
 border-radius:50px;
-
 transition:.35s ease;
-
 }
 
 .btn-resume:hover{

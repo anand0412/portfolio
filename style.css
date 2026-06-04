@@ -308,6 +308,7 @@ transparent
 opacity:0;
 transition:.3s;
 border-radius:18px;
+pointer-events:none;
 }
 
 .card:hover .overlay{

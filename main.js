@@ -85,7 +85,7 @@ function showImage(index){
 galleryImages.forEach((image,index)=>{
 
     image.addEventListener("click",()=>{
-
+        console.log("Clicked image");
         currentIndex = index;
 
         showImage(currentIndex);

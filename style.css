@@ -1428,3 +1428,41 @@ grid-template-columns:1fr;
 }
 
 }
+
+/* ==========================
+PORTFOLIO FILTERS
+========================== */
+
+.portfolio-filters{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:60px;
+}
+
+.filter-btn{
+background:#111;
+color:#fff;
+
+border:1px solid #222;
+
+padding:12px 24px;
+
+border-radius:50px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.filter-btn:hover{
+border-color:#d4af37;
+color:#d4af37;
+}
+
+.filter-btn.active{
+background:#d4af37;
+color:#000;
+border-color:#d4af37;
+}

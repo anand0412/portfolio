@@ -172,3 +172,99 @@ document.addEventListener("keydown",(e)=>{
     }
 
 });
+
+/* ==========================
+SCROLL REVEAL
+========================== */
+
+const reveals =
+document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll",()=>{
+
+    reveals.forEach(reveal=>{
+
+        const windowHeight =
+        window.innerHeight;
+
+        const revealTop =
+        reveal.getBoundingClientRect().top;
+
+        const revealPoint = 120;
+
+        if(revealTop < windowHeight - revealPoint){
+
+            reveal.classList.add("active");
+
+        }
+
+    });
+
+});
+
+/* ==========================
+ACTIVE MENU
+========================== */
+
+const sections =
+document.querySelectorAll("section");
+
+const navLinks =
+document.querySelectorAll("nav a");
+
+window.addEventListener("scroll",()=>{
+
+    let current = "";
+
+    sections.forEach(section=>{
+
+        const sectionTop =
+        section.offsetTop - 150;
+
+        if(pageYOffset >= sectionTop){
+
+            current =
+            section.getAttribute("id");
+        }
+
+    });
+
+    navLinks.forEach(link=>{
+
+        link.classList.remove("active");
+
+        if(
+        link.getAttribute("href")
+        === "#" + current
+        ){
+
+            link.classList.add("active");
+        }
+
+    });
+
+});
+
+/* ==========================
+SCROLL PROGRESS
+========================== */
+
+const progressBar =
+document.querySelector(".progress-bar");
+
+window.addEventListener("scroll",()=>{
+
+const totalHeight =
+
+document.documentElement.scrollHeight
+-
+window.innerHeight;
+
+const progress =
+
+(window.scrollY / totalHeight) * 100;
+
+progressBar.style.width =
+progress + "%";
+
+});

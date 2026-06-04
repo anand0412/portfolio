@@ -41,3 +41,48 @@ buttons.forEach(button => {
     });
 
 });
+
+/* ==========================
+LIGHTBOX
+========================== */
+
+const galleryImages =
+document.querySelectorAll(".gallery img");
+
+const lightbox =
+document.querySelector(".lightbox");
+
+const lightboxImage =
+document.querySelector(".lightbox-image");
+
+const closeLightbox =
+document.querySelector(".close-lightbox");
+
+galleryImages.forEach(image => {
+
+    image.addEventListener("click", () => {
+
+        lightbox.classList.add("active");
+
+        lightboxImage.src =
+        image.src;
+
+    });
+
+});
+
+closeLightbox.addEventListener("click", () => {
+
+    lightbox.classList.remove("active");
+
+});
+
+lightbox.addEventListener("click", e => {
+
+    if(e.target === lightbox){
+
+        lightbox.classList.remove("active");
+
+    }
+
+});

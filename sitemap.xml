@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<loc>https://anand0412.github.io/Portfolio/</loc>
+<priority>1.0</priority>
+</url>
+
+<url>
+<loc>https://anand0412.github.io/Portfolio/project-ai-training.html</loc>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://anand0412.github.io/Portfolio/project-neha.html</loc>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://anand0412.github.io/Portfolio/project-kashi.html</loc>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://anand0412.github.io/Portfolio/social-media.html</loc>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://anand0412.github.io/Portfolio/backdrops.html</loc>
+<priority>0.8</priority>
+</url>
+
+</urlset>

@@ -268,3 +268,9 @@ progressBar.style.width =
 progress + "%";
 
 });
+
+const socialCount =
+document.querySelectorAll(".gallery .social img").length;
+
+document.getElementById("social-count").textContent =
+socialCount + " Designs";

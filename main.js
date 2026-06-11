@@ -270,13 +270,25 @@ progress + "%";
 });
 
 const socialCount =
-document.querySelectorAll(".gallery .social img").length;
+document.querySelectorAll(".gallery .social").length;
+
+const bannerCount =
+document.querySelectorAll(".gallery .banner").length;
+
+const backdropCount =
+document.querySelectorAll(".gallery .backdrop").length;
+
+const cardCount =
+document.querySelectorAll(".gallery .card-type").length;
 
 document.getElementById("social-count").textContent =
 socialCount + " Designs";
 
-const socialCount =
-document.querySelectorAll(".gallery .social img").length;
+document.getElementById("banner-count").textContent =
+bannerCount + " Designs";
 
-document.getElementById("social-count").textContent =
-socialCount + " Designs";
+document.getElementById("backdrop-count").textContent =
+backdropCount + " Designs";
+
+document.getElementById("card-count").textContent =
+cardCount + " Design";

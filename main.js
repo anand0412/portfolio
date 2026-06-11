@@ -274,3 +274,9 @@ document.querySelectorAll(".gallery .social img").length;
 
 document.getElementById("social-count").textContent =
 socialCount + " Designs";
+
+const socialCount =
+document.querySelectorAll(".gallery .social img").length;
+
+document.getElementById("social-count").textContent =
+socialCount + " Designs";
